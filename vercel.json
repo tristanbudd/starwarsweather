@@ -1,0 +1,26 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.3",
+      "includeFiles": "vendor/**"
+    }
+  },
+  "routes": [
+    {
+      "src": "^/([a-zA-Z0-9_-]+)\\.php$",
+      "dest": "/api/$1.php"
+    },
+    {
+      "src": "^/$",
+      "dest": "/api/index.php"
+    },
+    {
+      "src": "^/css/(.*)$",
+      "dest": "/public/css/$1"
+    },
+    {
+      "src": "^/css/(.*)$",
+      "dest": "/public/icons/$1"
+    }
+  ]
+}
