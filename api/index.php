@@ -40,7 +40,7 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])) {
 }
 
 try {
-    $cityReader = new Reader(__DIR__ . '/db/GeoLite2-City.mmdb');
+    $cityReader = new Reader($_SERVER["DOCUMENT_ROOT"] . '/db/GeoLite2-City.mmdb');
 
     $record = $cityReader->city($ip);
 
