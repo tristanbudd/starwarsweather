@@ -19,10 +19,6 @@ function get_document_path($path_type="", $component=false): string
 }
 
 use GeoIp2\Database\Reader;
-use Dotenv\Dotenv;
-
-$dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->load();
 
 if (isset($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['HTTP_CLIENT_IP'];
