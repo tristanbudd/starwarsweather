@@ -1,5 +1,5 @@
 <?php
-require_once 'vendor/autoload.php';
+require_once($_SERVER["DOCUMENT_ROOT"] . "/vendor/autoload.php");
 
 function get_document_path($path_type="", $component=false): string
 {
