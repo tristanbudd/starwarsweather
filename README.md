@@ -29,7 +29,6 @@ Follow .env.example and set OPENWEATHER_API_KEY to your API key.
    
 4. **Ensure your web server is running**:
     - Apache with PHP enabled
-    - MySQL/MariaDB server
 
 5. **Should be good to go!**
 
